@@ -12,6 +12,13 @@ El patrón observer consiste proporcionar un mecanismo de reacción ante los cam
 * ObserverInterface:
   -methods: update()
 
+# Patrón Decorator
+
+El patrón decorator permite añadir nuevas funcionalidades a un objeto sin alterar su estructura.
+El objeto decorado puede cambiar en tiempo de ejecución, cogiendo la forma que queramos según los decorators que usemos.
+
+El decorator pattern es muy útil para cumplir el principio solid Open/Close
+
 ## Entorno dockerizado
 
 1.- Construir la imagen

@@ -7,9 +7,13 @@ El patrón estrategia consiste en encapsular las diferentes estrategias para ser
 El patrón observer consiste proporcionar un mecanismo de reacción ante los cambios en el estado de un objeto, siendo el objeto observado el que notifica sus cambios a los subscritos. Para ello usamos composición, mediante una lista de objetos subscritos para ser notificados y una referencia al objeto observado en los observadores.
 
 * ObservableInterface:
+
   -methods: add() remove() notify();
+
   -optional methods: set_state() get_state()
+
 * ObserverInterface:
+
   -methods: update()
 
 # Patrón Decorator
@@ -18,6 +22,12 @@ El patrón decorator permite añadir nuevas funcionalidades a un objeto sin alte
 El objeto decorado puede cambiar en tiempo de ejecución, cogiendo la forma que queramos según los decorators que usemos.
 
 El decorator pattern es muy útil para cumplir el principio solid Open/Close
+
+# Factory method pattern
+
+En este caso, la lógica de negocio es la que tiene que tomar la decisión sobre el objeto que tenemos que crear. Vamos no sabemos de antemano, que objeto necesitamos.
+Un ejemplo claro sería una clase que creara objetos de forma random. La factoría depende de la función random para crear uno u otro tipo de objeto.
+Este es un caso muy extremo, puede que según unas reglas de negocio, interese crear un objeto u otro.
 
 ## Entorno dockerizado
 

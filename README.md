@@ -26,8 +26,16 @@ El decorator pattern es muy útil para cumplir el principio solid Open/Close
 # Factory method pattern
 
 En este caso, la lógica de negocio es la que tiene que tomar la decisión sobre el objeto que tenemos que crear. Vamos no sabemos de antemano, que objeto necesitamos.
+
 Un ejemplo claro sería una clase que creara objetos de forma random. La factoría depende de la función random para crear uno u otro tipo de objeto.
+
 Este es un caso muy extremo, puede que según unas reglas de negocio, interese crear un objeto u otro.
+
+# Abstract Factory
+
+Como en el factory method es la lógica de negocio con la que decidimos que objeto crear.
+En este caso la factoría es capaz de crear diferentes familias de objetos, apoyandose para ello en diferentes factory methods.
+También podemos hacer uso de diferentes factorías, para variar la lógica de negocio a la hora de crear objetos.
 
 ## Entorno dockerizado
 
